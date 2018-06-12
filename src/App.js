@@ -64,7 +64,7 @@ class App extends Component {
         return cars.map((item, index) => (<tr key={index}>
             <td><a onClick={() => this.view(item)}>{item.manufacturer}</a></td>
             <td>{item.make}</td>
-            <td>{item.modal}</td>
+            <td>{item.model}</td>
             <td>{item.year}</td>
             <td>
                 <i onClick={() => this.edit(item)} className="fa fa-pencil"></i>

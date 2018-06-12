@@ -17,7 +17,7 @@ class AddModalPage extends Component {
         this.state = {
             manufacturer: '',
             make: '',
-            modal: '',
+            model: '',
             year: '',
         };
 
@@ -34,7 +34,7 @@ class AddModalPage extends Component {
         this.setState({
             manufacturer: '',
             make: '',
-            modal: '',
+            model: '',
             year: ''
         });
         this.props.onHide()
@@ -70,7 +70,7 @@ class AddModalPage extends Component {
                         <div className="form-group">
                             <label className="col-sm-4 control-label">Modal</label>
                             <div className="col-sm-8">
-                                <input type="text" name="modal" value={this.state.modal}
+                                <input type="text" name="model" value={this.state.model}
                                        onChange={this.handleChange} className="form-control"/>
                             </div>
                         </div>
@@ -104,12 +104,11 @@ const mapDispatchToProps = dispatch => ({
 
         if (isValid) {
             data.service.addCar(data.state).then(function (resp) {
-                console.log(resp);
                 dispatch(actions.addCar(data.state));
                 data.setState({
                     manufacturer: '',
                     make: '',
-                    modal: '',
+                    model: '',
                     year: ''
                 });
                 data.handleHide();

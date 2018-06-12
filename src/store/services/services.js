@@ -53,7 +53,7 @@ export class Services {
             body: JSON.stringify({
                 manufacturer: data.manufacturer,
                 make:data.make,
-                modal:data.modal,
+                model:data.model,
                 year:data.year
             })
         }).then((response) => response.json()).then((responseJson) => {

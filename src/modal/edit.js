@@ -34,7 +34,7 @@ class EditModalPage extends Component {
         this.setState({
             manufacturer: '',
             make: '',
-            modal: '',
+            model: '',
             year: ''
         });
         this.props.onHide()
@@ -70,7 +70,7 @@ class EditModalPage extends Component {
                         <div className="form-group">
                             <label className="col-sm-4 control-label">Modal</label>
                             <div className="col-sm-8">
-                                <input type="text" name="modal" value={this.state.modal}
+                                <input type="text" name="model" value={this.state.model}
                                        onChange={this.handleChange} className="form-control"/>
                             </div>
                         </div>
@@ -110,7 +110,7 @@ const mapDispatchToProps = dispatch => ({
                 data.setState({
                     manufacturer: '',
                     make: '',
-                    modal: '',
+                    model: '',
                     year: ''
                 });
                 data.handleHide();

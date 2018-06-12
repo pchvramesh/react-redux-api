@@ -32,7 +32,7 @@ class DeleteModalPage extends Component {
                 </Modal.Header>
                 <Modal.Body>
                     <h3>Are you sure you want to delete the</h3>
-                    <h3>{this.props.data.year} {this.props.data.manufacturer} {this.props.data.make} {this.props.data.modal} ?</h3>
+                    <h3>{this.props.data.year} {this.props.data.manufacturer} {this.props.data.make} {this.props.data.model} ?</h3>
                 </Modal.Body>
                 <Modal.Footer>
                     <Button bsStyle="primary" onClick={() => deleteCar(this)}>Save</Button>

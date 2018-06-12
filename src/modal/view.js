@@ -39,7 +39,7 @@ export default class ViewModalPage extends Component {
                         <tr>
                             <td>Modal</td>
                             <td>:</td>
-                            <td>{this.props.data.modal}</td>
+                            <td>{this.props.data.model}</td>
                         </tr>
                         <tr>
                             <td>Year</td>
